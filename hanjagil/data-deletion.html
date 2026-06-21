@@ -1,0 +1,128 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>한자길 데이터 삭제 안내 | Hanjagil Data Deletion</title>
+  <style>
+    :root { --bg:#fff7f0; --surface:#fffdf9; --text:#2e2115; --muted:#70543a; --border:#f0ded6; --accent:#ff7a68; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR","Apple SD Gothic Neo",sans-serif; line-height:1.7; }
+    .wrap { max-width:860px; margin:0 auto; padding:24px 16px 40px; }
+    .card { background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:20px; margin-bottom:16px; }
+    h1 { margin:0 0 12px; font-size:28px; color:var(--accent); }
+    h2 { margin:0 0 10px; font-size:20px; color:var(--text); }
+    h3 { margin:18px 0 8px; font-size:17px; color:var(--text); }
+    p { margin:0 0 12px; }
+    ol, ul { margin:0 0 12px 20px; padding:0; }
+    li { margin-bottom:6px; }
+    a { color:#9b4f2a; word-break:break-all; font-weight:700; }
+    code { background:#fff1e6; border-radius:6px; padding:2px 6px; }
+    .muted { color:var(--muted); }
+    .lang-label { display:inline-block; margin-bottom:8px; color:var(--accent); font-weight:800; letter-spacing:0.02em; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1>한자길 데이터 삭제 안내</h1>
+      <p class="muted">Data deletion instructions for 한자길 - 일본어 한자 학습</p>
+      <p>이 페이지는 <strong>한자길 - 일본어 한자 학습</strong> 앱의 Google 백업 데이터 삭제 방법을 안내합니다.</p>
+      <p>Google 로그인은 선택 기능이며, 학습 기록 백업과 복원에만 사용됩니다. 기본 학습 기능은 Google 로그인 없이도 사용할 수 있습니다.</p>
+      <p>개인정보처리방침: <a href="https://potacon.github.io/hanjagil/privacy-policy.html">https://potacon.github.io/hanjagil/privacy-policy.html</a></p>
+    </section>
+
+    <section class="card">
+      <span class="lang-label">한국어</span>
+      <h2>앱 내 Google 백업 데이터 삭제 방법</h2>
+      <ol>
+        <li>한자길 앱을 엽니다.</li>
+        <li>설정 탭으로 이동합니다.</li>
+        <li>Google 백업 관리 영역을 확인합니다.</li>
+        <li><strong>Google 백업 데이터 삭제</strong>를 누릅니다.</li>
+        <li>삭제 안내를 확인하고 삭제를 확정합니다.</li>
+      </ol>
+
+      <h3>삭제되는 데이터</h3>
+      <p>삭제 기능은 한자길을 위해 Google 로그인 계정에 연결되어 저장된 Cloud Firestore 백업 문서를 삭제합니다.</p>
+      <ul>
+        <li>학습 진행도</li>
+        <li>오답노트 기록</li>
+        <li>일일 학습 기록</li>
+        <li>구간/섹션 퀴즈 완료 기록</li>
+        <li>현재 학습 section/subsection</li>
+        <li>마지막 학습 위치</li>
+        <li>백업에 포함된 앱 설정값이 있는 경우 해당 설정값</li>
+      </ul>
+
+      <h3>삭제되지 않는 데이터</h3>
+      <ul>
+        <li>클라우드 백업 삭제는 사용자의 기기에 저장된 로컬 학습 기록을 삭제하지 않습니다.</li>
+        <li>로컬 데이터는 앱 내 로컬 초기화 기능, 앱 삭제, 또는 Android 설정의 앱 데이터 삭제를 통해 삭제할 수 있습니다.</li>
+        <li>사용자의 Google 계정 자체는 Google이 관리하며, 한자길 앱에서 Google 계정을 삭제하지 않습니다.</li>
+      </ul>
+
+      <h3>보관 기간 및 재생성</h3>
+      <ul>
+        <li>사용자가 앱에서 삭제를 확정하면 Cloud backup data가 삭제됩니다.</li>
+        <li>삭제 후 한자길은 해당 cloud backup data의 별도 사본을 의도적으로 보관하지 않습니다.</li>
+        <li>사용자가 나중에 다시 Google 로그인 후 백업 기능을 사용하면 새 백업 데이터가 생성될 수 있습니다.</li>
+        <li>기기 내부의 로컬 데이터는 개발자가 접근할 수 없습니다.</li>
+      </ul>
+
+      <h3>추가 삭제 요청</h3>
+      <p>추가 삭제 요청이 필요한 경우 <a href="mailto:hun8529@naver.com">hun8529@naver.com</a> 으로 문의해 주세요. 문의 시 앱 이름과 Google 로그인에 사용한 이메일 주소를 함께 알려 주세요.</p>
+
+      <h3>기타 안내</h3>
+      <p>한자길에는 유료 또는 프리미엄 콘텐츠가 없습니다. QR code, PIN, biometric authentication, membership access도 사용하지 않습니다.</p>
+    </section>
+
+    <section class="card" lang="en">
+      <span class="lang-label">English</span>
+      <h2>How to delete Google backup data in the app</h2>
+      <p>This page explains how users can delete cloud backup data for <strong>Hanjagil - Japanese Kanji Learning</strong>.</p>
+      <p>Google sign-in is optional and is used only for learning record backup and restore. The main learning features can be used without signing in.</p>
+      <ol>
+        <li>Open the app.</li>
+        <li>Go to Settings.</li>
+        <li>Open Google backup management.</li>
+        <li>Tap Delete Google backup data.</li>
+        <li>Confirm deletion.</li>
+      </ol>
+
+      <h3>Data that will be deleted</h3>
+      <p>The app deletes the Cloud Firestore backup document stored for Hanjagil and associated with the signed-in Google account.</p>
+      <ul>
+        <li>Learning progress</li>
+        <li>Wrong-note records</li>
+        <li>Daily study records</li>
+        <li>Subsection quiz completion records</li>
+        <li>Current section/subsection</li>
+        <li>Last study position</li>
+        <li>App settings included in the backup, if present</li>
+      </ul>
+
+      <h3>Data that will not be deleted</h3>
+      <ul>
+        <li>Local learning records stored on the user's device are not deleted by cloud backup deletion.</li>
+        <li>Users can delete local data from in-app local reset options, by uninstalling the app, or by clearing app data from Android settings.</li>
+        <li>The user's Google Account itself is managed by Google and is not deleted by this app.</li>
+      </ul>
+
+      <h3>Retention and new backups</h3>
+      <ul>
+        <li>Cloud backup data is deleted when the user confirms deletion in the app.</li>
+        <li>After deletion, the app does not intentionally retain a separate copy of that cloud backup data.</li>
+        <li>If the user signs in again and continues using backup features, new backup data may be created.</li>
+        <li>Local device data is not accessible to the developer.</li>
+      </ul>
+
+      <h3>Additional deletion request</h3>
+      <p>For additional deletion requests, email <a href="mailto:hun8529@naver.com">hun8529@naver.com</a>. Please include the app name and the Google account email used for sign-in.</p>
+
+      <h3>Other access information</h3>
+      <p>The app does not provide paid or premium content. The app does not use QR codes, PINs, biometric authentication, or membership-only access.</p>
+    </section>
+  </main>
+</body>
+</html>
